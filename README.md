@@ -42,5 +42,5 @@ of the number you want to convert.
 3. Enter the Number: Input the number you want to convert. Make sure it uses the correct 
 digits of the selected input base.
 4. Select the Output Base: Choose the numeral system to which you want to convert the number.
-5. Click the "Convert" or "Calculate" Button: Initiate the conversion process.
+5. Click the "Convert" Button: Initiate the conversion process.
 6. View the Result: The tool will display the converted number in the selected output base.
