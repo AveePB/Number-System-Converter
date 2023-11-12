@@ -1,5 +1,9 @@
 package app.converter;
 
+//Java Language
+import java.lang.Integer;
+import java.lang.StringBuilder;
+
 /**
  * The class is used as the container
  * for the static functions. The Functions
@@ -17,7 +21,7 @@ public class Converter {
         if ('a' <= c && c <= 'z') return c - 'a' + 10;
         if ('0' <= c && c <= '9') return c - '0';
 
-        return -1;
+        return Integer.MAX_VALUE;
     }
 
     /**
