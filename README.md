@@ -1,5 +1,5 @@
 # Number System Converter
-The Number System Converter is a versatile tool that allows you to convert numbers 
+The Number System Converter is a tool that allows you to convert numbers 
 between different numeral systems. This tool is particularly useful when you need 
 to convert numbers from one base to another, such as decimal to binary, hexadecimal 
 to octal, or any other combination of numeral systems. 
