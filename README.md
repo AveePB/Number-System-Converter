@@ -13,22 +13,22 @@ hexadecimal (base 16).
 
 ## Supported Numeral Systems
 The Number System Converter supports the following numeral systems:
-- Binary (Base 2): Uses only the digits 0 and 1.
-- Ternary (Base 3): Uses the digits 0, 1, and 2.
-- Quaternary (Base 4): Uses the digits 0, 1, 2, and 3.
-- Quinary (Base 5): Uses the digits 0, 1, 2, 3, and 4.
-- Senary (Base 6): Uses the digits 0, 1, 2, 3, 4, and 5.
-- Septenary (Base 7): Uses the digits 0, 1, 2, 3, 4, 5, and 6.
-- Octal (Base 8): Uses the digits 0 to 7.
-- Nonary (Base 9): Uses the digits 0 to 8.
-- Decimal (Base 10): The standard numeral system we use in everyday life, which uses the digits 0 to 9.
-- Undecimal (Base 11): Uses the digits 0 to 9 and the letter 'A' (or 'a') to represent 10.
-- Duodecimal (Base 12): Uses the digits 0 to 9 and the letters 'A' (or 'a') and 'B' (or 'b') to represent 10 and 11.
-- Tridecimal (Base 13): Uses the digits 0 to 9 and the letters 'A' to 'C' (or 'a' to 'c') to represent 10 to 12.
-- Tetradecimal (Base 14): Uses the digits 0 to 9 and the letters 'A' to 'D' (or 'a' to 'd') to represent 10 to 13.
-- Pentadecimal (Base 15): Uses the digits 0 to 9 and the letters 'A' to 'E' (or 'a' to 'e') to represent 10 to 14.
-- Hexadecimal (Base 16): Uses the digits 0 to 9 and the letters 'A' to 'F' (or 'a' to 'f') to represent 10 to 15.
-- Base-17 to Base-36: These bases continue the pattern by using the digits 0 to 9 and the letters 'A' to 'Z' (or 'a' to 'z') to represent values from 10 to 35.
+- Binary (**Base 2**): Uses only the digits 0 and 1.
+- Ternary (**Base 3**): Uses the digits 0, 1, and 2.
+- Quaternary (**Base 4**): Uses the digits 0, 1, 2, and 3.
+- Quinary (**Base 5**): Uses the digits 0, 1, 2, 3, and 4.
+- Senary (**Base 6**): Uses the digits 0, 1, 2, 3, 4, and 5.
+- Septenary (**Base 7**): Uses the digits 0, 1, 2, 3, 4, 5, and 6.
+- Octal (**Base 8**): Uses the digits 0 to 7.
+- Nonary (**Base 9**): Uses the digits 0 to 8.
+- Decimal (**Base 10**): The standard numeral system we use in everyday life, which uses the digits 0 to 9.
+- Undecimal (**Base 11**): Uses the digits 0 to 9 and the letter 'A' (or 'a') to represent 10.
+- Duodecimal (**Base 12**): Uses the digits 0 to 9 and the letters 'A' (or 'a') and 'B' (or 'b') to represent 10 and 11.
+- Tridecimal (**Base 13**): Uses the digits 0 to 9 and the letters 'A' to 'C' (or 'a' to 'c') to represent 10 to 12.
+- Tetradecimal (**Base 14**): Uses the digits 0 to 9 and the letters 'A' to 'D' (or 'a' to 'd') to represent 10 to 13.
+- Pentadecimal (**Base 15**): Uses the digits 0 to 9 and the letters 'A' to 'E' (or 'a' to 'e') to represent 10 to 14.
+- Hexadecimal (**Base 16**): Uses the digits 0 to 9 and the letters 'A' to 'F' (or 'a' to 'f') to represent 10 to 15.
+- **Base-17 to Base-36**: These bases continue the pattern by using the digits 0 to 9 and the letters 'A' to 'Z' (or 'a' to 'z') to represent values from 10 to 35.
 
 Each of these numeral systems is used in various contexts, with bases 2, 8, 10, and 16 being among the most commonly encountered in computer science and mathematics. Bases above 10 often use letters to represent values greater than 9 to extend the available digits.
 
