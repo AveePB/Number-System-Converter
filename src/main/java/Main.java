@@ -1,9 +1,10 @@
-//import app.converter.tests.Tests;
-import app.mainwindow.MainWindow;
+//Java Custom
+import app.gui.MainWindow;
 
 public class Main {
+
     public static void main(String[] args) {
-        //Tests.run(20);
         MainWindow mw = new MainWindow();
+        mw.open();
     }
 }
