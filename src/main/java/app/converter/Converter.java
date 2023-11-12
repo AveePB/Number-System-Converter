@@ -2,6 +2,7 @@ package app.converter;
 
 //Java Language
 import java.lang.Integer;
+import java.lang.String;
 import java.lang.StringBuilder;
 
 /**
@@ -11,6 +12,15 @@ import java.lang.StringBuilder;
  * numeral systems (2-36).
  */
 public class Converter {
+    //Constants:
+    public static final String[] NUMBER_BASES_STR = {"Base-2", "Base-3", "Base-4", "Base-5", "Base-6", "Base-7",
+            "Base-8", "Base-9", "Base-10", "Base-11", "Base-12", "Base-13", "Base-14", "Base-15", "Base-16", "Base-17",
+            "Base-18", "Base-19", "Base-20", "Base-21", "Base-22", "Base-23", "Base-24", "Base-25", "Base-26", "Base-27",
+            "Base-28", "Base-29", "Base-30", "Base-31", "Base-32", "Base-33", "Base-34", "Base-35", "Base-36",};
+    public static int[] NUMBER_BASES_INT = {2, 3, 4, 5, 6, 7, 8, 9, 10,
+            11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
+            27, 28, 29, 30, 31, 32, 33, 34, 35, 36};
+
     /**
      * Converts the given character to its integer value.
      * @param c the character c (0-9, a-z, A-Z).

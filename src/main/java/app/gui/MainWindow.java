@@ -1,20 +1,30 @@
 package app.gui;
 
+//Java Custom
+import app.converter.Converter;
+import app.gui.actionlisteners.ConvertButtonListener;
+import app.gui.actionlisteners.ConvertFromComboBoxListener;
+import app.gui.documents.InputDocument;
+
 //Java Swing
-import javax.swing.*;
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.WindowConstants;
 
 //Java Abstract Window Toolkit
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Font;
 
 //Java Language
 import java.lang.String;
 
 public class MainWindow {
     //Constants:
-    private static final String[] NUMBER_BASES = {"Base-2", "Base-3", "Base-4", "Base-5", "Base-6", "Base-7",
-    "Base-8", "Base-9", "Base-10", "Base-11", "Base-12", "Base-13", "Base-14", "Base-15", "Base-16", "Base-17",
-    "Base-18", "Base-19", "Base-20", "Base-21", "Base-22", "Base-23", "Base-24", "Base-25", "Base-26", "Base-27",
-    "Base-28", "Base-29", "Base-30", "Base-31", "Base-32", "Base-33", "Base-34", "Base-35", "Base-36",};
     public static final int WINDOW_WIDTH = 370, WINDOW_HEIGHT = 250;
     public static final String WINDOW_ICON_PATH = "./assets/img/icon.png";
 
@@ -32,6 +42,8 @@ public class MainWindow {
         initializeComboBoxes();
         initializeTextFields();
         initializeButton();
+
+        assignActionListeners();
     }
 
     /**
@@ -62,7 +74,7 @@ public class MainWindow {
         convertFromLabel.setBounds(30, 10, 100, 30);
         convertFromLabel.setFont(titleFont);
 
-        this.convertFromCB = new JComboBox<>(MainWindow.NUMBER_BASES);
+        this.convertFromCB = new JComboBox<>(Converter.NUMBER_BASES_STR);
         this.convertFromCB.setBounds(30, 40, 120, 30);
         this.convertFromCB.setFont(CBFont);
 
@@ -72,7 +84,7 @@ public class MainWindow {
         convertToLabel.setBounds(200, 10, 100, 30);
         convertToLabel.setFont(titleFont);
 
-        this.convertToCB = new JComboBox<>(MainWindow.NUMBER_BASES);
+        this.convertToCB = new JComboBox<>(Converter.NUMBER_BASES_STR);
         this.convertToCB.setBounds(200, 40, 120, 30);
         this.convertToCB.setFont(CBFont);
 
@@ -100,7 +112,9 @@ public class MainWindow {
         this.inputJTF = new JTextField();
         this.inputJTF.setBounds(30, 100, 130, 40);
         this.inputJTF.setFont(TFFont);
+        this.inputJTF.setDocument(new InputDocument(Converter.NUMBER_BASES_INT[0]));
         this.inputJTF.setBorder(BorderFactory.createLineBorder(Color.GRAY));
+
 
         //Output Text Field
         JLabel outputLabel = new JLabel("Output");
@@ -135,6 +149,16 @@ public class MainWindow {
 
         //Adds GUI components to the frame.
         this.mainFrame.add(this.convertBtn);
+    }
+
+    /**
+     * It assigns the action listeners. It's
+     * required to initialize all GUI components
+     * first!
+     */
+    private void assignActionListeners() {
+        this.convertFromCB.addActionListener(new ConvertFromComboBoxListener(this.convertFromCB, this.inputJTF));
+        this.convertBtn.addActionListener(new ConvertButtonListener(this.convertFromCB, this.convertToCB,  this.inputJTF, this.outputJTF));
     }
 
     /**
