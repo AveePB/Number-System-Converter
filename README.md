@@ -11,11 +11,6 @@ system is the decimal system (base 10), which uses the digits 0 through 9. Howev
 there are many other numeral systems, such as binary (base 2), octal (base 8), and 
 hexadecimal (base 16).
 
-The Number System Converter allows you to convert numbers from one base to another. 
-It accepts input in one base and provides the converted value in another base. This can 
-be helpful for various applications, including computer programming, digital electronics, 
-and mathematics.
-
 ## Supported Numeral Systems
 The Number System Converter supports the following numeral systems:
 - Binary (Base 2): Uses only the digits 0 and 1.
