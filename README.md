@@ -35,8 +35,12 @@ Each of these numeral systems is used in various contexts, with bases 2, 8, 10, 
 ## Usage
 To use the Number System Converter, follow these steps:
 
-1. Open the Number System Converter: You can access the Number System Converter through a 
-web application or a programming library, depending on the implementation.
+1. Open the Number System Converter: You can access the Number System Converter through
+a jar file (***.\number-system-converter.jar***). You can double click the jar file or
+you can use the following command:
+```
+java -jar number-system-converter.jar
+```
 2. Select the Input Base: Choose the numeral system of the input number. This is the base 
 of the number you want to convert.
 3. Enter the Number: Input the number you want to convert. Make sure it uses the correct 
